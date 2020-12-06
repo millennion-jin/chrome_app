@@ -1,0 +1,111 @@
+body {
+  font-family: sans-serif;
+}
+
+.bg_block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bg_block .gw_block {
+  margin: 0 auto;
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+}
+
+.bg_block .gw_block #geo_weather {
+  float: right;
+  padding: 2px 10px 0 0;
+  font: gulim;
+  font-size: 20px;
+}
+
+.bg_block .contents_block {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: 40px 1fr 150px 70px 1fr 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.bg_block .contents_block .center_block {
+  width: 100%;
+  height: 100%;
+}
+
+.bg_block .contents_block #geo_weather_div {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+
+.bg_block .contents_block #clock_div {
+  grid-column: 2;
+  grid-row: 3;
+  line-height: 50px;
+}
+
+.bg_block .contents_block #clock_div #ymd {
+  font-size: 20px;
+}
+
+.bg_block .contents_block #clock_div #clock {
+  font-size: 80px;
+}
+
+.bg_block .contents_block #name_div {
+  grid-column: 2;
+  grid-row: 4;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.bg_block .contents_block #name_div #name_input {
+  width: 60%;
+  font-size: 30px;
+}
+
+.bg_block .contents_block #name_div #name_display {
+  width: 60%;
+  font-size: 30px;
+}
+
+.bg_block .contents_block #todo_div {
+  grid-column: 2;
+  grid-row: 5;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.bg_block .contents_block #todo_div #todo_input {
+  width: 60%;
+  font-size: 30px;
+}
+
+.bg_block .contents_block li {
+  text-align: left;
+  font-size: 25px;
+  list-style-type: square;
+  margin-left: 50px;
+}
+
+.bg_block .contents_block li button {
+  margin-left: 10px;
+}
+
+.hidden_cont {
+  display: none;
+}
+
+#backgroud_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

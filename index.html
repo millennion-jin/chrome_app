@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+	<img
+        id="backgroud_img"
+        src="https://hamonikr.org/files/attach/images/118/312/070/091a9004527320054613ddcdbda75b46.jpg"
+      />
+    <div id="backgroud_div" class="bg_block">
+      <div id="contents_div" class="contents_block">
+        <div id="geo_weather_div" class="gw_block">
+          <span id="geo_weather">18C / Seoul</span>
+        </div>
+        <div id="clock_div" class="center_block">
+          <span id="ymd">2020년 12월 06일</span>
+          <br />
+          <span id="clock">PM 10:45</span>
+        </div>
+        <div id="name_div" class="center_block">
+          <form id="name_form">
+            <input
+              id="name_input"
+              type="text"
+              placeholder="What is your name?"
+            />
+          </form>
+          <span id="name_display" class="hidden_cont">Welcome Jay</span>
+        </div>
+        <div id="todo_div" class="center_block">
+          <form id="todo_form">
+            <input id="todo_input" type="text" placeholder="TODO?" />
+          </form>
+          <ul id="todo_ul"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+	<link rel="stylesheet" href="src/styles.css" />
+  </body>
+</html>
