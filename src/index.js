@@ -155,7 +155,7 @@ function successGetPosition(target) {
   const longitude = target.coords.longitude;
 
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?units=metric&lat=${latitude}&lon=${longitude}&appid=${API_KEY}`
+    `https://api.openweathermap.org/data/2.5/weather?units=metric&lat=${latitude}&lon=${longitude}&appid=${API_KEY}`
   )
     .then(function (response) {
       return response.json();
